@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="" />
+    <title>Delivery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css external -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-spy"
+    data-bs-offset="100"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/img/logo.png" alt="" /> Deli<span>very</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse align-items-center"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav ms-auto" id="#navbar-spy">
+            <a class="nav-link active" href="#beranda">Beranda</a>
+            <a class="nav-link" href="#fitur">Fitur</a>
+            <a class="nav-link" href="#partner">Partner Kami</a>
+            <a class="nav-link" href="#pelacakan">Lacak Paket</a>
+          </div>
+          <div class="kontak d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-kontak mt-3 mt-lg-0 w-100"
+              >Hubungi Kami</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- beranda -->
+    <section class="beranda" id="beranda">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 col-md-12"
+            data-aos="fade-down"
+            data-aos-delay="400"
+          >
+            <h5>Pengiriman tercepat & teraman</h5>
+            <h1>
+              Kami memiliki Pengiriman
+              <span class="cepat">Lebih cepat</span> di<span class="kota">
+                Kota Anda</span
+              >
+            </h1>
+            <p class="">
+              Kami adalah server pengiriman paling cepat dan favorit di seluruh
+              kota
+            </p>
+
+            <div
+              class="search d-flex justify-content-center justify-content-lg-start"
+            >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Cari Tempat Kami di Kota Anda"
+              />
+              <button class="btn-cari text-white" type="button">Cari</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="img-beranda">
+              <img
+                src="assets/img/banner.png"
+                alt=""
+                class="img-fluid position-absolute end-0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end beranda -->
+
+    <!-- pelacak kiriman  -->
+    <section class="pelacakan mt-5" id="pelacakan">
+      <div class="background-color">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="card-track position-absolute p-4">
+              <div class="body-track d-lg-flex">
+                <div class="col-lg-5">
+                  <div class="body-pengiriman">
+                    <h2>Pengiriman Anda Aman, Temukan Posisi Paketmu</h2>
+                    <p>
+                      masukkan 13 digit nomor resi dan klik tombol centang untuk
+                      melihat posisinya
+                    </p>
+                    <div class="btn-resi d-flex align-items-center mt-lg-5">
+                      <i class="bx bx-search-alt-2 ms-3 me-2"></i>
+                      <input type="text" placeholder="Nomor Resi" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 ms-lg-auto me-lg-4">
+                  <div class="body-tarif mt-5 mt-lg-0">
+                    <div class="d-flex align-items-center">
+                      <i class="bx bx-wallet me-4"></i>
+                      <h3 class="mt-2">Menghitung Tarif Pengiriman</h3>
+                    </div>
+                    <p>periksa perkiraan harga pengiriman untuk paket Anda</p>
+                    <div
+                      class="d-flex align-items-center justify-content-md-center"
+                    >
+                      <div class="tarif-dari me-4">
+                        <div class="input-group">
+                          <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Dari</option>
+                            <option value="1">Bekasi</option>
+                            <option value="2">Jakarta</option>
+                            <option value="3">Bandung</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="icon-change">
+                        <i class="bx bx-transfer-alt"></i>
+                      </div>
+                      <div class="tarif-ke ms-4">
+                        <div class="input-group">
+                          <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Dari</option>
+                            <option value="1">Bekasi</option>
+                            <option value="2">Jakarta</option>
+                            <option value="3">Bandung</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn-periksa mt-4 mt-lg-4">
+                      <button>Periksa Tarif</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center heading-layanan">
+              <h2>Layanan Kami</h2>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-12">
+              <div class="card p-4" data-aos="flip-right" data-aos-delay="200">
+                <div class="body-layanan text-md-center text-lg-start">
+                  <img src="assets/img/icon-layanan1.png" alt="" />
+                  <h3>Pengiriman Cepat</h3>
+                  <p>
+                    Dengan pengiriman ke pintu Anda, Anda bisa mendapatkan
+                    semuanya tepat waktu dan dalam satu perjalanan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mt-4 mt-lg-0">
+              <div class="card p-4" data-aos="flip-right" data-aos-delay="400">
+                <div class="body-layanan text-md-center text-lg-start">
+                  <img src="assets/img/icon-layanan2.png" alt="" />
+                  <h3>Hari Berikutnya</h3>
+                  <p>
+                    Hari yang sama, pengiriman hari berikutnya tersedia untuk
+                    semua pesanan yang dilakukan sebelum 14:30 (Senin - Jumat)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mt-4 mt-lg-0">
+              <div class="card p-4" data-aos="flip-right" data-aos-delay="600">
+                <div class="body-layanan text-md-center text-lg-start">
+                  <img src="assets/img/icon-layanan3.png" alt="" />
+                  <h3>Reguler</h3>
+                  <p>
+                    Kami melakukan yang terbaik untuk tepat waktu, tetapi
+                    terkadang keadaan tak terduga membuat kami sedikit
+                    terlambat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir pelacak kiriman  -->
+
+    <!-- fitur kami -->
+    <section class="fitur" id="fitur">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 heading-fitur">
+            <h2 class="text-center">Fitur Kami</h2>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <!-- Swiper -->
+            <div class="swiper mySwiperFitur py-5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card-fitur p-4 text-center">
+                  <div class="body-fitur justify-content-center">
+                    <div class="d-flex justify-content-center mt-3">
+                      <div
+                        class="icon-fitur d-flex justify-content-center align-items-center"
+                      >
+                        <img src="assets/img/icon-fitur1.png" alt="" class="" />
+                      </div>
+                    </div>
+
+                    <h2 class="mt-4">Customer Service</h2>
+                    <p class="mt-4">24 jam Layanan Keluhan Pelanggan</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-fitur p-4 text-center">
+                  <div class="body-fitur justify-content-center">
+                    <div class="d-flex justify-content-center mt-3">
+                      <div
+                        class="icon-fitur d-flex justify-content-center align-items-center"
+                      >
+                        <img src="assets/img/icon-fitur2.png" alt="" class="" />
+                      </div>
+                    </div>
+
+                    <h2 class="mt-4">Pengiriman Global</h2>
+                    <p class="mt-4">
+                      Mengirim produkmu hingga kepada seluruh dunia
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-fitur p-4 text-center">
+                  <div class="body-fitur justify-content-center">
+                    <div class="d-flex justify-content-center mt-3">
+                      <div
+                        class="icon-fitur d-flex justify-content-center align-items-center"
+                      >
+                        <img src="assets/img/icon-fitur3.png" alt="" class="" />
+                      </div>
+                    </div>
+
+                    <h2 class="mt-4">Sistem Pelacakan</h2>
+                    <p class="mt-4">sistem pelacakan paket waktu real</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-fitur p-4 text-center">
+                  <div class="body-fitur justify-content-center">
+                    <div class="d-flex justify-content-center mt-3">
+                      <div
+                        class="icon-fitur d-flex justify-content-center align-items-center"
+                      >
+                        <img src="assets/img/icon-fitur4.png" alt="" class="" />
+                      </div>
+                    </div>
+
+                    <h2 class="mt-4">semua wilayah</h2>
+                    <p class="mt-4">Menjangkau seluruh kota di indonesia</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-fitur p-4 text-center">
+                  <div class="body-fitur justify-content-center">
+                    <div class="d-flex justify-content-center mt-3">
+                      <div
+                        class="icon-fitur d-flex justify-content-center align-items-center"
+                      >
+                        <img src="assets/img/icon-fitur5.png" alt="" class="" />
+                      </div>
+                    </div>
+
+                    <h2 class="mt-4">Email Resi</h2>
+                    <p class="mt-4">
+                      Kami akan mengirim nomor resi ke email pelanggan
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-fitur p-4 text-center">
+                  <div class="body-fitur justify-content-center">
+                    <div class="d-flex justify-content-center mt-3">
+                      <div
+                        class="icon-fitur d-flex justify-content-center align-items-center"
+                      >
+                        <img src="assets/img/icon-fitur6.png" alt="" class="" />
+                      </div>
+                    </div>
+
+                    <h2 class="mt-4">Ganti Rugi</h2>
+                    <p class="mt-4">
+                      Kami mengkompensasi jika ada barang rusak
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination mt-5 bottom-0"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir fitur kami -->
+
+    <!-- partner kami -->
+    <section class="partner" id="partner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 heading-partner text-center">
+            <h2>Partner Kami</h2>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-4 col-lg-2 col-md-3 logo-partner">
+            <img src="assets/img/logo-partner1.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-2 col-md-3 logo-partner">
+            <img src="assets/img/logo-partner2.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-2 col-md-3 logo-partner">
+            <img src="assets/img/logo-partner3.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-2 col-md-3 logo-partner">
+            <img src="assets/img/logo-partner4.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-2 col-md-3 logo-partner">
+            <img src="assets/img/logo-partner5.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-2 col-md-3 logo-partner">
+            <img src="assets/img/logo-partner6.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-2 col-md-3 logo-partner">
+            <img src="assets/img/logo-partner7.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-2 col-md-3 logo-partner">
+            <img src="assets/img/logo-partner8.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir partner kami -->
+
+    <!-- testimoni -->
+    <section class="testimoni section-margin" id="testimoni">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 heading-testimoni text-center">
+            <h2>Testimoni</h2>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12">
+            <div class="swiper mySwiperTesti py-5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card-testimoni mt-5 p-4">
+                  <div class="body-testimoni">
+                    <div class="icon-star">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p class="mt-4">
+                      Proses pengiriman terlihat sempurna. Saya terkesan dengan
+                      kecepatan dan ketepatan layanan.
+                    </p>
+                    <div class="d-flex justify-content-between mt-4">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-profile">
+                          <img src="assets/img/profile-testimoni1.png" alt="" />
+                        </div>
+                        <div class="nama-akun ms-2">
+                          <h4>Kathryn Murphy</h4>
+                          <h5>Seller Photobook</h5>
+                        </div>
+                      </div>
+                      <div class="icon-kutip">
+                        <i class="bx bxs-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-testimoni mt-5 p-4">
+                  <div class="body-testimoni">
+                    <div class="icon-star">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p class="mt-4">
+                      Proses pengiriman terlihat sempurna. Saya terkesan dengan
+                      kecepatan dan ketepatan layanan.
+                    </p>
+                    <div class="d-flex justify-content-between mt-4">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-profile">
+                          <img src="assets/img/profile-testimoni1.png" alt="" />
+                        </div>
+                        <div class="nama-akun ms-2">
+                          <h4>Kathryn Murphy</h4>
+                          <h5>Seller Photobook</h5>
+                        </div>
+                      </div>
+                      <div class="icon-kutip">
+                        <i class="bx bxs-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-testimoni mt-5 p-4">
+                  <div class="body-testimoni">
+                    <div class="icon-star">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p class="mt-4">
+                      Proses pengiriman terlihat sempurna. Saya terkesan dengan
+                      kecepatan dan ketepatan layanan.
+                    </p>
+                    <div class="d-flex justify-content-between mt-4">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-profile">
+                          <img src="assets/img/profile-testimoni1.png" alt="" />
+                        </div>
+                        <div class="nama-akun ms-2">
+                          <h4>Kathryn Murphy</h4>
+                          <h5>Seller Photobook</h5>
+                        </div>
+                      </div>
+                      <div class="icon-kutip">
+                        <i class="bx bxs-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-testimoni mt-5 p-4">
+                  <div class="body-testimoni">
+                    <div class="icon-star">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p class="mt-4">
+                      Proses pengiriman terlihat sempurna. Saya terkesan dengan
+                      kecepatan dan ketepatan layanan.
+                    </p>
+                    <div class="d-flex justify-content-between mt-4">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-profile">
+                          <img src="assets/img/profile-testimoni1.png" alt="" />
+                        </div>
+                        <div class="nama-akun ms-2">
+                          <h4>Kathryn Murphy</h4>
+                          <h5>Seller Photobook</h5>
+                        </div>
+                      </div>
+                      <div class="icon-kutip">
+                        <i class="bx bxs-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-testimoni mt-5 p-4">
+                  <div class="body-testimoni">
+                    <div class="icon-star">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p class="mt-4">
+                      Proses pengiriman terlihat sempurna. Saya terkesan dengan
+                      kecepatan dan ketepatan layanan.
+                    </p>
+                    <div class="d-flex justify-content-between mt-4">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-profile">
+                          <img src="assets/img/profile-testimoni1.png" alt="" />
+                        </div>
+                        <div class="nama-akun ms-2">
+                          <h4>Kathryn Murphy</h4>
+                          <h5>Seller Photobook</h5>
+                        </div>
+                      </div>
+                      <div class="icon-kutip">
+                        <i class="bx bxs-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-testimoni mt-5 p-4">
+                  <div class="body-testimoni">
+                    <div class="icon-star">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p class="mt-4">
+                      Proses pengiriman terlihat sempurna. Saya terkesan dengan
+                      kecepatan dan ketepatan layanan.
+                    </p>
+                    <div class="d-flex justify-content-between mt-4">
+                      <div class="d-flex align-items-center">
+                        <div class="icon-profile">
+                          <img src="assets/img/profile-testimoni1.png" alt="" />
+                        </div>
+                        <div class="nama-akun ms-2">
+                          <h4>Kathryn Murphy</h4>
+                          <h5>Seller Photobook</h5>
+                        </div>
+                      </div>
+                      <div class="icon-kutip">
+                        <i class="bx bxs-quote-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir testimoni -->
+
+    <!-- footer -->
+    <footer class="footer section-margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="footer-logo d-flex justify-content-center align-items-center"
+            >
+              <img src="assets/img/logo-footer.png" alt="" class="img-fluid" />
+            </div>
+            <div class="contact-footer">
+              <h5>help@delivery.com</h5>
+              <p>(0321) 887372</p>
+            </div>
+            <div class="sosmed-footer">
+              <img src="assets/img/sosmed-1.png" alt="" class="img-fluid" />
+              <img src="assets/img/sosmed-2.png" alt="" class="img-fluid" />
+              <img src="assets/img/sosmed-3.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-12 col-md-5 offset-md-1 col-lg-2 offset-lg-2 mt-5">
+            <h3>Informasi</h3>
+            <ul>
+              <li>Office Hours</li>
+              <li>Requirements</li>
+              <li>About us</li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mt-5">
+            <h3>Produk & Layanan</h3>
+            <ul>
+              <li>Pengiriman Cepat</li>
+              <li>Hari Berikutnya</li>
+              <li>Reguler</li>
+              <li>Bayar di tempat</li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-5 offset-md-1 offset-lg-0 col-lg-2 mt-5">
+            <h3>Link Terkait</h3>
+            <ul>
+              <li>Lacak Pengiriman</li>
+              <li>Biaya Pengiriman</li>
+              <li>Jaringan Kami</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js external -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- jquery  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
